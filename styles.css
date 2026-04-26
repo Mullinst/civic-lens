@@ -198,11 +198,54 @@ section {
   margin-bottom: 1.7rem;
 }
 
+video {
+  display: block;
+  width: 100%;
+}
+
 footer {
   margin-top: 0.75rem;
   padding: 1.85rem 1rem 1.35rem;
   background: var(--blue-bulletin);
   color: var(--watchdog-white);
+}
+
+#welcome p {
+  margin-bottom: 1rem;
+}
+
+blockquote {
+  margin-top: 0.85rem;
+  text-align: center;
+  font-family: var(--font-heading);
+  font-size: 0.8rem;
+  line-height: 1.4;
+}
+
+/* Breaking News */
+#breaking-news {
+  display: grid;
+  grid-template-columns: 1fr;
+  column-gap: 1rem;
+  row-gap: 0;
+}
+
+#breaking-news h2 {
+  grid-column: 1 / -1;
+}
+
+#breaking-news section {
+  margin: 0.25rem;
+  padding: 1rem;
+  background: var(--news-flash);
+  color: var(--watchdog-white);
+  border: 2px solid var(--truth-text);
+  box-shadow: var(--shadow);
+}
+
+#breaking-news p {
+  border-top: 2px solid var(--watchdog-white);
+  padding-top: 0.25rem;
 }
 
 /* ///ADD/// Global Text Styles */
