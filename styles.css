@@ -260,14 +260,32 @@ small {
 
 /* ///ADD/// medium styles 620px */
 @media screen and (min-width: 620px){
+  .menu {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    margin-top: 0;
+  }
+
   .menu-button {
     display: none;
   }
+
+  
   
 }
 
 /* ///ADD/// large styles 920px */
 @media screen and (min-width: 920px){
+  .menu {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    margin-top: 0;
+  }
+  
   .menu-button {
     display: none;
   }
@@ -276,6 +294,14 @@ small {
 
 /* ///ADD/// x-large styles 1024px */
 @media screen and (min-width: 1024px){
+  .menu {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    margin-top: 0;
+  }
+  
   .menu-button {
     display: none;
   }
@@ -289,6 +315,5 @@ small {
 @supports (selector(:has(*))) {
   .mobile-nav:has(#menu-toggle:checked) .menu {
     display: flex;
-    /* TODO review if this is correct */
   }
 }
