@@ -112,12 +112,47 @@ body.dark-mode {
 }
 
 /* ///ADD/// Navigation Styles */
+.mobile-nav {
+  margin-top: 1rem;
+  font-family: var(--font-body);
+  font-size: 1rem;
+  font-weight: 800;
+  line-height: 1;
+  text-transform: uppercase;
+
+}
+
+.menu-button {
+  display: inline-block;
+  padding: 0.65rem 0.8rem;
+  background-color: var(--news-flash);
+  color: var(--watchdog-white);
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.menu {
+  display: none;
+
+}
+
 
 /* ///ADD/// Global Layout Styles */
 
 /* ///ADD/// Global Text Styles */
 body {
+  min-width: 320px;
+  background: var(--watchdog-white);
+  color: var(--truth-text);
   font-family: var(--font-body);
+  font-size: 1.1rem;
+  line-height: 1.4;
+}
+
+header {
+  background: var(--blue-bulletin);
+  color: var(--watchdog-white);
+  padding: 1.45rem 1rem 1.65rem;
 }
 
 h1, h2, h3 {
