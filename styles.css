@@ -271,6 +271,8 @@ blockquote {
   padding: 1rem;
   border: 2px solid var(--truth-text);
   box-shadow: var(--shadow);
+  background-color: var(--watchdog-white);
+  color: var(--truth-text);
 }
 
 #featured-articles p {
@@ -531,7 +533,25 @@ small {
 }
 
 /* ///ADD/// Interaction Queries for color scheme light and dark and motion preference */
+@media (prefers-color-scheme: light) {
+  body {
+    background-color: var(--watchdog-white);
+    color: var(--truth-text);
+  }
+}
 
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: var(--truth-text);
+    color: var(--watchdog-white);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --transition: all 1.0s ease;
+  }
+}
 
 /* ///ADD///  Feature Query for :has() that checks if the #menu-toggle is checked */
 @supports (selector(:has(*))) {
